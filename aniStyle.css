@@ -1,0 +1,133 @@
+#scene{
+    margin:1em;
+    width: 100vw;
+    height: 100vh;
+    border: 3px solid;
+        background-color:rgb(250, 235, 215);
+}
+#boy{
+     width:200px;
+     height: 550px;
+     background-image: url(img/new%20boy.png);
+         margin-top:10%;
+    margin-left: 80%;
+
+
+}
+.button{
+background-color: burlywood;
+      cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+    padding: 15px 22px
+}
+.jumpingboy{
+    animation: jumpingboy .7s  infinite;}
+
+    @keyframes jumpingboy {
+    to{
+        transform: translate(0,-200px);
+        }
+    }
+
+
+.movingboy{
+    animation: movingboy 4s ease infinite ;}
+
+    @keyframes movingboy {
+    to{
+        transform: translate(-100vw);
+        }
+    }
+
+.movingboyTo{
+    animation: movingboyTo 3s ease forwards ;}
+
+    @keyframes movingboyTo {
+    to{
+        transform:translate(-30vw);
+        }
+}
+
+.movingboyFrom{
+    animation: movingboyFrom 3s ease   forwards;
+}
+
+    @keyframes movingboyFrom {
+   0%{
+        transform: translate(-30vw);
+        }
+       100%{
+            transform: translate(-100vw);
+        }
+
+
+
+}
+
+.onejump{
+    animation: onejump .3s  1 ;}
+
+    @keyframes onejump {
+    0%{
+        transform: translate3d(0px,0px,0px);
+        }
+        50%{
+            transform: translate3d(0px,-100px,0px);
+        }
+        100%{
+            transform: translate3d(0px,0px,0px)
+        }
+    }
+
+.fading {
+    opacity: 1;
+    animation: fade 4s linear;
+}
+
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
+.glowingboy {
+    -webkit-box-shadow:0px 0px 40px blue;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+
+
+}
+
+.fallingboy{
+    animation:fallingboy   .5s ease forwards ;}
+
+    @keyframes fallingboy {
+    to{
+        transform:rotate(-90deg) ;
+        }
+}
+
+.shakingboy{
+animation:shakingboy  .1s  infinite;}
+
+    @keyframes shakingboy {
+    to{
+        transform: translate(-4px,0px);
+        }
+}
+
+.rollingboy{
+     animation: rollingboy 5s ease-in forwards ;}
+
+    @keyframes rollingboy {
+    100%{
+        transform:translate(-110vw) rotate(-3100deg);
+        }
+    }
+
+
+
+
